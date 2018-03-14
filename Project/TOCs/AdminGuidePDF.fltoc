@@ -53,5 +53,8 @@
     <TocEntry
       Title="Licensing and Auditing"
       Link="/Content/Introduction/Licensing.htm" />
+    <TocEntry
+      Title="HyperFile Topic 1"
+      Link="/Content/TestTopics/HyperFileTopic1.htm" />
   </TocEntry>
 </CatapultToc>
