@@ -21,7 +21,7 @@
   CustomTopicFileExtension="html">
   <Destinations>
     <Destination
-      Link="/Project/Destinations/HyperStoreHelp.fldes" />
+      Link="/Project/Destinations/HyperFileHelp.fldes" />
   </Destinations>
   <Variables></Variables>
 </CatapultTarget>
