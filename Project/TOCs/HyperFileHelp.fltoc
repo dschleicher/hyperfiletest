@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="">
+  <TocEntry
+    Title="What's New in This Release"
+    Link="/Content/Introduction/WhatsNew.htm"></TocEntry>
+  <TocEntry
+    Title="Introduction to HyperStore"
+    Link="/Content/Introduction/Welcome.htm"
+    StartSection="false">
+    <TocEntry
+      Title="HyperStore Overview"
+      Link="/Content/Introduction/Overview.htm" />
+    <TocEntry
+      Title="Licensing and Auditing"
+      Link="/Content/Introduction/Licensing.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Content1"
+    Link="/Content/TestTopics/HyperFileTopic1.htm">
+    <TocEntry
+      Title="HyperFile Topic 1"
+      Link="/Content/TestTopics/HyperFileTopic1.htm" />
+  </TocEntry>
+</CatapultToc>

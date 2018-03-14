@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="HTML5 Output"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/Introduction/Welcome.htm"
+  MasterToc="/Project/TOCs/HyperFileHelp.fltoc"
+  ConditionTagExpression="include[General.Online] exclude[General.PDF] "
+  InsertMOTW="true"
+  EnableSitemap="false"
+  IncludeStopWords="true"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="png"
+  MasterPage="/Content/Resources/MasterPages/MasterPage.flmsp"
+  Skin="/Project/Skins/HTML5 - Tripane.flskn"
+  OutputFile="HyperFileHelp.htm"
+  ResultsPerPage="5"
+  UseCustomTopicFileExtension="true"
+  CustomTopicFileExtension="html">
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/HyperStoreHelp.fldes" />
+  </Destinations>
+  <Variables></Variables>
+</CatapultTarget>
