@@ -1,0 +1,10 @@
+# HyperFileHelp
+Analyzer\
+Analyzer/
+Analyzer/*.*
+Output\
+Output/
+Output/*.*
+FileSync
+Project/Users
+**/Thumbs.db
