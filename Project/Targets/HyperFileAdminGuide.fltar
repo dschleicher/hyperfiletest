@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="HyperFile Admin Guide for print"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/AdminGuidePDF.fltoc"
+  ConditionTagExpression=""
+  InjectEmptyPages="true"
+  PatchHeadingLevels="true"
+  OutputFile="HyperStoreAdminGuide"
+  InjectBookHeadings="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    PreserveTrackedChanges="false" />
+  <Destinations></Destinations>
+  <DocumentProperties
+    Title="HyperFile Admin Guide"
+    Author="Cloudian, Inc." />
+  <PDF
+    ShowUsedBookmarks="false"
+    CollapsedBookmarks="true"
+    InitialMagnification="Fit" />
+</CatapultTarget>
