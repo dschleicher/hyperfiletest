@@ -7,7 +7,7 @@
   GlossaryTermConversion="marked"
   DefaultUrl="/Content/Introduction/Welcome.htm"
   MasterToc="/Project/TOCs/HyperFileHelp.fltoc"
-  ConditionTagExpression="include[General.Online] exclude[General.PDF] "
+  ConditionTagExpression="include[General.OnlineOnly]exclude[General.PdfOnly]"
   InsertMOTW="true"
   EnableSitemap="false"
   IncludeStopWords="true"
