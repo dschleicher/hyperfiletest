@@ -6,7 +6,7 @@
     Title="What's New in This Release"
     Link="/Content/Introduction/WhatsNew.htm"></TocEntry>
   <TocEntry
-    Title="Introduction to HyperStore"
+    Title="Introduction to HyperFile"
     Link="/Content/Introduction/Welcome.htm"
     StartSection="false">
     <TocEntry

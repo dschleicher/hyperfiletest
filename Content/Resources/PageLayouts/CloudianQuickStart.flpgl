@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="Left" Width="800" Height="800" Padding="20px" PageSize="A4" PageType="left" PaddingLeft="2.5cm" PaddingRight="3.5cm" PaddingTop="2.5cm" PaddingBottom="2.5cm">
+        <Frame Flow="body" ColumnCount="1" Anchors="" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="-0.3020833in" Y="0in" Right="-0.7604167in" Bottom="-0.84375in" Width="17.72708cm" Height="26.88167cm">
+        </Frame>
+    </Page>
+    <Page Name="Right" Width="800" Height="800" Padding="20px" PageSize="A4" PageType="right" PaddingLeft="3.5cm" PaddingRight="2.50cm" PaddingTop="2.5cm" PaddingBottom="2.5cm">
+        <Frame Flow="body" ColumnCount="1" Anchors="" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="-0.6979167in" Y="0in" Right="-0.3645833in" Bottom="-0.84375in" Width="17.72708cm" Height="26.88167cm">
+        </Frame>
+    </Page>
+    <Page Name="First Right Page" Width="800" Height="800" Padding="20px" PageSize="A4" PageType="firstright" PaddingLeft="3.5cm" PaddingRight="2.5cm" PaddingTop="2.5cm" PaddingBottom="2.5cm">
+        <Frame Flow="header" Anchors="" Right="0.01041667in" Bottom="9.989583in" X="-0.3333333in" Y="-1.878542cm" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" Height="1.243542cm" TextAlign="right" VerticalAlign="bottom" Width="15.84854cm">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>
+                            <xhtml:img xhtml:src="../Images/cloudian_logo_for_footerr.png" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" Anchors="" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="-0.6979167in" Y="0in" Right="-0.3645833in" Bottom="-0.84375in" Width="17.72708cm" Height="26.88167cm">
+        </Frame>
+    </Page>
+    <Page Width="800" Height="800" Padding="20px" PageSize="A4" PageType="emptyleft" PaddingLeft="3.5cm" PaddingRight="2.5cm" PaddingTop="2.5cm" PaddingBottom="2.5cm" Name="Empty Left">
+        <Frame X="120px" Y="919px" Width="312px" Height="36px" Flow="footer" Right="136px" Bottom="-20px" TextAlign="center" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>This page left intentionally blank</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>
