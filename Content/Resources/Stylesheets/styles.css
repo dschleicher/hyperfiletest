@@ -45,7 +45,7 @@ h2
 	font-weight: normal;
 	margin-bottom: 4px;
 	margin-top: 20px;
-	color: #c1d62f;
+	color: #b7ce2c;
 }
 
 h3
@@ -140,14 +140,6 @@ pre
 td
 {
 	line-height: 20px;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-right-style: solid;
-	border-right-width: 1px;
-	border-top-style: solid;
-	border-top-width: 1px;
-	border-left-style: solid;
-	border-left-width: 1px;
 }
 
 a
@@ -205,14 +197,7 @@ h4
 
 th
 {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-left-style: solid;
-	border-left-width: 1px;
-	border-right-style: solid;
-	border-right-width: 1px;
-	border-top-style: solid;
-	border-top-width: 1px;
+	
 }
 
 @media print
@@ -480,8 +465,8 @@ MadCap|dropDownHead.CloudianChildDropDown	/*Just testing creating a style*/
 
 MadCap|dropDownHead.CloudianParentDropDown	/*Test style for parent drop-downs*/
 {
-	color: #c3d600;
 	font-size: 12pt;
+	color: #b7ce2c;
 }
 
 img.ImgCloudian

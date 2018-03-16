@@ -56,5 +56,8 @@
     <TocEntry
       Title="HyperFile Topic 1"
       Link="/Content/TestTopics/HyperFileTopic1.htm" />
+    <TocEntry
+      Title="Smart Redirect for Erasure Coding"
+      Link="/Content/TestTopics/StoragePoliciesSmartRedirect.htm" />
   </TocEntry>
 </CatapultToc>
