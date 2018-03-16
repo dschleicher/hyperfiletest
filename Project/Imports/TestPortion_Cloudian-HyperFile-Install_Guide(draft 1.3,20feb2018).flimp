@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2018-03-16T12:57:38.4703726-04:00"
+  ProjectName="HF-Test2"
+  ProjectFolder="C:\1-Cloudian\GitHub\hyperfiletest\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  Stylesheet="../../Content/Resources/Stylesheets/styles.css"
+  LastImport="2018-03-16T13:08:53.2513597-04:00">
+  <Files>
+    <Url
+      Source="../../../../HF-3.3/Existing-HF-Docs/CLD-INF-User-Docs/ImportTests/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018).docx"
+      AbsoluteSource="file:///C:/1-Cloudian/HF-3.3/Existing-HF-Docs/CLD-INF-User-Docs/ImportTests/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018).docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018).htm"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/Cloudian HyperFile Overview.png"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/Cloudian HyperFile Overview_1.png"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/Cloudian HyperFile Overview_2.png"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/Cloudian HyperFile Overview_3.png"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/Cloudian HyperFile Overview.htm"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)_1.htm"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018)/HyperFile Installation Requirements.htm"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../TOCs/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018).fltoc"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/TestPortion_Cloudian-HyperFile-Install_Guide(draft 1.3,20feb2018).flmsp"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/styles_1.css"
+      TimeStamp="3/16/2018 1:08:08 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1" />
+    <Map
+      From="Heading 2"
+      To="h2" />
+    <Map
+      From="Heading 3"
+      To="h3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+    <Map
+      From="Normal (Web)"
+      To="p" />
+    <Map
+      From="List Paragraph"
+      To="p" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Page Number" />
+  </UsedCharacterStyles>
+</MsWordImport>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Document Overview"
+    Link="/Content/WordTest1/DocumentOverview.htm" />
+  <TocEntry
+    Title="Cloudian HyperFile Overview"
+    Link="/Content/WordTest1/HyperFileOverview.htm" />
+  <TocEntry
+    Title="Available Hypervisors and Platforms"
+    Link="/Content/WordTest1/HypervisorsPlatforms.htm" />
+  <TocEntry
+    Title="HyperFile: Installation Requirements overview"
+    Link="/Content/WordTest1/InstallationRequirements.htm" />
+</CatapultToc>

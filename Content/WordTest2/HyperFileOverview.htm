@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="547" MadCap:lastWidth="857">
+    <head>
+    </head>
+    <body>
+        <h1>Cloudian HyperFile Overview</h1>
+        <p>In a nutshell, HyperFile is a scale-out NAS platform that provides filesystem protocols for clients and transparent data tiering to object storage (Cloudian HyperStore).  Data is written by applications / clients on HyperFile and then it takes care about managing the underlying tiers of storage, leveraging its ILM capabilities. </p>
+        <p>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+It can be deployed as a stand-alone node or as an HA pair and provides several capabilities:
+</p>
+        <ul>
+            <li> 
+Data caching (multiple levels of disk) and tiering to HyperStore 
+</li>
+            <li>ILM engine and Data Tiering / Migration
+</li>
+            <li>WORM (including other features like Audit, etc… for Compliance)
+</li>
+            <li>Bi-modal access to data (directly read via S3 in object storage)
+</li>
+            <li>Integrated Data Protection via Snapshots
+</li>
+            <li>Multi-site deployments and Geo-Distribution
+</li>
+            <li>AD/LDAP integration and User Quota
+
+</li>
+        </ul>
+        <p>In the context of deployment of HyperFile as a NAS interface for HyperStore, the architecture and the data ingestion workflow can be summarized in the following diagram: 
+
+ 
+
+Thus, we do need to provide the following resources to enable successful deployment: 
+
+•	Computing resources to run the HyperFile instance (i.e. the VM)
+•	One or more disk devices to be used as primary and secondary disk levels
+•	Access to HyperStore via Http / S3
+•	The proper HyperFile product licenses (based on features and data capacity)
+•	(optional) In case of HA implementations a shared disk resource to be used as common data cache by the two HA nodes (Active / Passive implementation)
+
+A full product description is out of scope of this document but more information can be found in product specifications and datasheets. 
+</p>
+    </body>
+</html>

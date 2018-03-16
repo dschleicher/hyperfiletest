@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2018-03-16T13:24:00.3800226-04:00"
+  ProjectName="HF-Test2"
+  ProjectFolder="C:\1-Cloudian\GitHub\hyperfiletest\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../Content/Resources/Stylesheets/styles.css"
+  LastImport="2018-03-16T13:26:27.4182813-04:00">
+  <Files>
+    <Url
+      Source="../../../../HF-3.3/Existing-HF-Docs/CLD-INF-User-Docs/ImportTests/WordTest1.docx"
+      AbsoluteSource="file:///C:/1-Cloudian/HF-3.3/Existing-HF-Docs/CLD-INF-User-Docs/ImportTests/WordTest1.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/WordTest1/Document Overview.htm"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/WordTest1/Cloudian HyperFile Overview.png"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/WordTest1/Cloudian HyperFile Overview_1.png"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/WordTest1/Cloudian HyperFile Overview_2.png"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/WordTest1/Cloudian HyperFile Overview_3.png"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/WordTest1/Cloudian HyperFile Overview.htm"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/WordTest1/Available Hypervisors and.htm"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/WordTest1/HyperFile Installation Requirements.htm"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../TOCs/WordTest1.fltoc"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/WordTest1.flmsp"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/styles_2.css"
+      TimeStamp="3/16/2018 1:25:39 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1" />
+    <Map
+      From="Heading 2"
+      To="h1" />
+    <Map
+      From="Heading 3"
+      To="h2" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+    <Map
+      From="Normal (Web)"
+      To="p" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Page Number" />
+  </UsedCharacterStyles>
+</MsWordImport>
