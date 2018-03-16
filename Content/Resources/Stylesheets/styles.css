@@ -140,6 +140,14 @@ pre
 td
 {
 	line-height: 20px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
 }
 
 a
@@ -193,6 +201,18 @@ a:hover
 h4
 {
 	mc-heading-level: 0;
+}
+
+th
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
 }
 
 @media print
@@ -544,37 +564,6 @@ p.Indent
 	line-height: 20px;
 	margin-bottom: 10px;
 	margin-left: 0.4in;
-}
-
-p.NoteWithIcon
-{
-	margin-top: 8px;
-	line-height: 20px;
-	margin-bottom: 10px;
-	color: #616E14;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	background-color: #f0f0f0;
-	background-repeat: no-repeat;
-	background-image: none;
-	mc-auto-number-format: '{b}Note  {/b}';
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
-	border-left-style: solid;
-	border-left-width: 0px;
-	border-right-style: solid;
-	border-right-width: 0px;
-	border-top-style: solid;
-	border-top-width: 0px;
-	border-bottom-style: solid;
-	border-bottom-width: 0px;
 }
 
 p.TopicTag
