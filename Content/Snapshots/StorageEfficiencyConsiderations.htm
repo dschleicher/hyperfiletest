@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1134" MadCap:lastWidth="863">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1512" MadCap:lastWidth="860">
     <head>
     </head>
     <body>
@@ -13,7 +13,9 @@
             <li><b>HyperStore</b>: using versioning makes the number of objects storage in a bucket larger so this extra capacity needs to be accounted for.  <b>Just to be clear a snapshot is NOT a full dataset (so N versions = N x space) but it works at INCREMENTAL file level (so N versions = Baseline + Incremental)</b>.</li>
         </ul>
         <p>Here is an example:</p>
-        <p>IMAGE-3</p>
+        <p>
+            <img src="../Resources/Images/Diagrams/SnapshotsAndVersioning.png" />
+        </p>
         <p>Let’s call the current data amount (T0) in HyperStore “<b>baseline</b>” (“Bucket in base state” in the diagram). Taking a baseline Snapshot 0 @ T0 and then two snapshots: Snapshot 1 @ T1 and Snapshot 2 @ T2.</p>
         <ul>
             <li>Snapshot 0: a point-in-time image of what is in the system at time T0 = Baseline</li>
