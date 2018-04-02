@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="419" MadCap:lastWidth="889">
+    <head>
+    </head>
+    <body>
+        <h1>Manual Recovery of the System Settings</h1>
+        <p>In case of a complete node failure, or a failure of the root disk device, the system configuration can be recovered from a backup. 
+</p>
+        <p>The system backup files are generated when taking a snapshot. They look like this:
+</p><pre class="large" xml:space="preserve">&lt;hostname&gt;_sys-devices_&lt;date&gt;.tar.gz
+&lt;hostname&gt;_sys-system_&lt;date&gt;.tar.gz
+&lt;hostname&gt;_sys-volumes_&lt;date&gt;.tar.gz</pre>
+        <p>For example:</p><pre class="large" xml:space="preserve">alpha40_sys-devices_2018-01-18_16-54-56.tar.gz
+alpha40_sys-system_2018-01-18_16-54-56.tar.gz
+alpha40_sys-volumes_2018-01-18_16-54-56.tar.gz</pre>
+        <p>Unzip those files, stop all services (with<em> infistop</em>) and then move the extracted files in the <em>/ovmh/devices</em>, <em>/ovmh/system</em>, and <em>/ovmh/volumes</em> directories respectively. Then restart services (with <em>infistart</em>).</p>
+        <p>Keep in mind that some of the other system settings (e.g. network, NTP, AD configuration, locally defined users) will not be recovered. This might include some of the networking part of the cluster configuration.</p>
+    </body>
+</html>

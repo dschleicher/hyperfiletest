@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="753" MadCap:lastWidth="803">
+    <head>
+    </head>
+    <body>
+        <h1>Creating a Backup (Snapshot)</h1>
+        <p>To perform a backup or set-up a backup schedule we need to get to the Volume DB backup page. You can do that by clicking the <b>SETTINGS</b> tab in the System part of the left side-bar.
+The first thing in the page is the backup scheduling form itself as in the below picture: 
+</p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsCreate.png" class="ImgCloudian" />
+        </p>
+        <p>It’s possible to choose:</p>
+        <ul>
+            <li>Snapshot schedule (run now or schedule)</li>
+            <li>What to save: single Volume or all Volumes on HyperFile. We can clearly see that snapshots are allowed only for volumes with a versioning-enabled bucket in HyperStore. In this case only “Test2_snapshot” is available. We can still choose another volume but, in this case, snapshot will only perform a database backup without being able to retain corresponding object versions in HyperStore.</li>
+            <li>Where to save the snapshot (= database). We can use separate devices for this.</li>
+            <li>How many snapshots to keep (see considerations on space usage). Up to 99.</li>
+            <li>If snapshot image (database copy) is saved into object storage.</li>
+        </ul>
+        <p>Also, make sure the Volume has a tier “object storage level” or snapshots won’t work!</p>
+        <p>Fill out the form according to you needs and click <b>Apply</b> to perform/schedule the backup.</p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsCreateConfirmationMessage.png" class="ImgCloudian" />
+        </p>
+        <p>All schedules and backups will appear below the form:</p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsCreateListed.png" class="ImgCloudian" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

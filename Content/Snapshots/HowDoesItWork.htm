@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="699" MadCap:lastWidth="863">
+    <head>
+    </head>
+    <body>
+        <h1>How Does It Work?</h1>
+        <p>As of the current release (3.2.2), the HyperFile snapshot feature works as follows: </p>
+        <ul>
+            <li>Works only with object storage (HyperStore) buckets with versioning enabled since it’s leveraging it for preserving the copies of changed data.</li>
+            <li>It’s version-based and not (yet) time-based. In other words, in current release, it’s possible to take and preserve a certain number of snapshots (up to 99) and specify their retention by number (example: keep 20 snapshots).</li>
+            <li>It’s not yet possible (but planned for a subsequent release) to define a time-based retention (example: keep Snapshot X for 30 days and Snapshot Y for 1 year).</li>
+            <li>It’s based on backing-up HyperFile database, storing it and preventing deletion of all content present in any saved database backup.</li>
+            <li>It’s possible to create a snapshot by scheduling or running manually a database backup. This is "freezing pointers" to objects in HyperStore (+ store database backup also in HyperStore for further protection).</li>
+            <li>At this point no additional space consumption is driven. This operation just freezes pointers and data but, if no further data is written, no more space is consumed.</li>
+            <li>After X time we can run snapshot again. Now we have two views of filesystem that can be browsed. What can be seen in both snaps is the status of filesystem at that particular point in time.</li>
+            <li>Further file modifications happening between snap 1 and snap 2 (example if file changes 10 times) are not trapped in snapshot (but might be seen as versions by users via Web-Browser if this is enabled, let's assume we disable it for now). This means that they are not kept in the backups.</li>
+            <li>To use a snapshot, we just need to restore the corresponding version of the database and a snapshot volume will be generated at that moment.</li>
+            <li>The volume can then be mounted and exposed for user consumption (file restore).</li>
+            <li>We don't need to repopulate the whole disk cache with files as it was in the original filesystem, we just present a filesystem of pointers and data is in HyperStore. A file is recalled only if there is a need to access it.</li>
+            <li>It’s also possible to revert the full volume to a snapshot. In this case the whole volume content will be replaced with the content of the selected snapshot (i.e. all live filesystem will be replaced, and we can’t undo this operation).</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1249" MadCap:lastWidth="851">
+    <head>
+    </head>
+    <body>
+        <h1>Restoring a Backup as a Snapshot</h1>
+        <p>In our example we took a few snapshots of volume “Test2_snapshot” and “Test1_snapshot”. 
+Now, we did destroy the volume “Test1_snapshot” to show the recovery procedure (see later in this document). Let’s focus on “Test2_snapshot” and do a <b>file recovery</b>. The status of the current filesystem is: 
+</p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsRestoreBackupFilesystemView1.png" class="ImgCloudian" />
+        </p>
+        <p>Let’s delete a few files (the ones highlighted). If we want to get them back, we can mount one of the snapshots that contain them (or just guess based on the timestamp) and browse the volume.</p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsRestoreMountSelection.png" class="ImgCloudian" />
+        </p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsRestoreMountSelectionDone.png" class="ImgCloudian" />
+        </p>
+        <p>The chosen snapshot is ready to be opened and browsed to look for data. The page contains operations that can be performed and some statistics about it. To be able to access the snapshot it's required that you open it, just like a volume. Click the <b>Open</b> button to do so.</p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsRestoreMountOpen.png" class="ImgCloudian" />
+        </p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsRestoreMountOpenOk.png" class="ImgCloudian" />
+        </p>
+        <p>Now we can mount the snapshot as a totally independent volume on any client. To manage how the snapshot is exported click the <b>SHARING</b> tab. The default settings will match the original volume's (except the exported name will be different). You can change these to your preference and then click <b>Apply settings</b> to finalize the changes.</p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsRestoreMountShare.png" class="ImgCloudian" />
+        </p>
+        <p>A dialog will appear confirming that the snapshot was opened. Click <b>Ok</b> and the page will reload.</p>
+        <p>The snapshot can now be mounted on any client (CIFS in the example) using its own mount point: _SNAPSHOT_Test2_snapshot_20180221_054821. In the example:</p>
+        <p><code>\\192.168.153.100\_SNAPSHOT_Test2_snapshot_20180221_054821</code>
+        </p>
+        <p>
+            <img src="../Resources/Images/GUI/Settings/SnapshotsRestoreBackupFilesystemView2.png" class="ImgCloudian" />
+        </p>
+        <p>And we got back all the files that were deleted previously.</p>
+        <p>In this case, being mounted on Windows, we can also notice that the file icon is slightly different. The reason is that the <b>files are not on disk</b>. In fact, snapshot just allowed restore the pointers and metadata without repopulating the whole disk cache.</p>
+        <p>This is a very useful way to avoid space waste and long file transfers. We just access what we really need (1 file, 1 folder, etc…). When we click on a file, we can see it physically restored to disk.</p>
+        <p>When you are done, close the snapshot by clicking the <b>Close</b> button next to "Snapshot status" in the overview page and then click <b>Delete snapshot</b> to delete the snapshot. <b>Delete</b> doesn’t delete the snapshot, just removes it from the list of mounted snapshots (the rules about number of versions keep snapshot in the system). We can remount it when needed.</p>
+        <p>IMAGE-12</p>
+    </body>
+</html>

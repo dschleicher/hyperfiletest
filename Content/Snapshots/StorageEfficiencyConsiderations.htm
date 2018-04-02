@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1134" MadCap:lastWidth="863">
+    <head>
+    </head>
+    <body>
+        <h1>Storage Efficiency Considerations</h1>
+        <p>A very important topic is the space consumption that is introduced by snapshot (as any other data protection mechanism based on versioning, like a backup). 
+<b>Bottom line: we need to account for extra space when sizing both HyperFile and HyperStore.</b><![CDATA[ 
+]]></p>
+        <p>In details:</p>
+        <ul>
+            <li><b>HyperFile</b>: add some more disk space to enable mounting snapshot volumes. By default, any snapshot volume, when created, is very small since it contains only pointers (it’s practically speaking just a database restore) but, in case there is a heavy file recall from HyperStore, keep in mind space consumption. It’s possible to mount snapshots on any device we want so it’s not impacting primary cache.</li>
+            <li><b>HyperStore</b>: using versioning makes the number of objects storage in a bucket larger so this extra capacity needs to be accounted for.  <b>Just to be clear a snapshot is NOT a full dataset (so N versions = N x space) but it works at INCREMENTAL file level (so N versions = Baseline + Incremental)</b>.</li>
+        </ul>
+        <p>Here is an example:</p>
+        <p>IMAGE-3</p>
+        <p>Let’s call the current data amount (T0) in HyperStore “<b>baseline</b>” (“Bucket in base state” in the diagram). Taking a baseline Snapshot 0 @ T0 and then two snapshots: Snapshot 1 @ T1 and Snapshot 2 @ T2.</p>
+        <ul>
+            <li>Snapshot 0: a point-in-time image of what is in the system at time T0 = Baseline</li>
+            <li>Snapshot 1: a point-in-time image of what is in the system at time T1.</li>
+            <li>Snapshot 2: a point-in-time image of what is in the system at time T2.</li>
+        </ul>
+        <p><b>Snapshot 0 doesn’t add any new object</b>. Just takes a picture of what is in the system at that time (the baseline). Capacity increase = 0% (*)</p>
+        <p>Assuming the file change rate between T0 and T1 is 5% the overhead on object storage will be 5%. Or, in other words, <b>at T1 HyperStore will contain 105% of baseline</b> (= original objects + new versions of changed objects). Same consideration for T2, etc…</p>
+        <p>This means that it will take approximately 20 snapshots to double space consumption (to make it simpler).</p>
+        <ul>
+            <li>Snapshot 0 = baseline;</li>
+            <li>Snapshot 1 =105%;</li>
+            <li>Snapshot 2 =110%;</li>
+            <li>Snap 20 = ~200%</li>
+        </ul>
+        <p>So, in this example, if baseline is 1 TB and changed data between snapshots is 50 GB, you will store in HyperStore only 50 GB of "versions", not the whole baseline of 1 TB.</p>
+        <p>And, none of them will be recalled in cache if not accessed explicitly (manually or via pre-fetching).</p>
+        <p>For comparison other storage systems that use block-level snapshots will still need to hold the whole baseline data (1 TB) and then apply block-level deltas on top of it.</p>
+        <p>The savings in this case will be on the delta blocks vs files used by HyperFile.</p>
+        <p>As an additional note, we also need to account for the space needed to save HyperFile database to HyperStore, for every snapshot. This is normally negligible compared to dataset size and because compression greatly reduces this (as a guideline, 1 M objects = approx. 1 GB and can be reduced to approximately 100 MB with compression assuming a 10:1 ratio). It’s possible to save the database backup to dedicated device to limit impact on primary cache.</p>
+        <p>Last but not least, use of snapshot doesn’t alter in any way the transparency of storing files as objects in native format. All objects belonging to snapshots will be seen in HyperStore exactly as they are: <b>versions of same objects</b>. This enables any kind of S3 access to them, as per original data (i.e. “file-object duality”).</p>
+    </body>
+</html>

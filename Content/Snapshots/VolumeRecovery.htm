@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="459" MadCap:lastWidth="863">
+    <head>
+    </head>
+    <body>
+        <h1>Database Recovery After a Failure (aka "Volume Recovery")</h1>
+        <p>In case the volume database is corrupted or lost, it can be recovered from one of the snapshots. The current volume contents and configuration will be overwritten with the ones from the snapshot. It’s not mounted as an independent volume but instead will overwrite the original volume (i.e. roll-back). So, use carefully since it can’t be undone, and we need to close the volume first (= impacting the clients). 
+
+</p>
+        <p>This might mean that the latest modifications to the volume can go lost, in this case it is advised to re-index the storage tiers or take other appropriate action to sync the database.
+</p>
+        <p>To recover the volume:</p>
+        <ol>
+            <li>Check current volume content</li>
+        </ol>
+        <div class="Indent">
+            <p>IMAGE-13</p>
+        </div>
+        <ol MadCap:continue="true">
+            <li>Close the volume</li>
+            <li>Run a “Recover Volume” from the chosen snapshot</li>
+        </ol>
+        <div class="Indent">
+            <p>IMAGE-14</p>
+        </div>
+        <ol MadCap:continue="true">
+            <li>
+                <p>Re-open and mount the volume. Now the content is in line with the content of the snapshot</p>
+            </li>
+        </ol>
+    </body>
+</html>

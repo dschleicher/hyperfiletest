@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="354" MadCap:lastWidth="889">
+    <head>
+    </head>
+    <body>
+        <h1>What Is a Snapshot?</h1>
+        <p><b>Snapshot is defined as a point-in-time image of the content of a data repository.</b><![CDATA[ 
+
+]]></p>
+        <p>By using this approach HyperFile can provide system administrators a powerful tool to protect data by defining a schedule of planned backups or run them on the spot in case of need. 
+In the specific case of HyperFile and HyperStore, a snapshot allows to freeze the pointers to data in HyperStore and <b>leverages versioning</b> to enable multiple point-in-time backup to be taken. 
+
+</p>
+        <p>Thus, in current form, snapshot works only with HyperStore (or other object storage) with versioning enabled on buckets used by HyperFile. In other terms, when a snapshot is taken, HyperFile pointers to specific HyperStore object versions are saved. 
+
+</p>
+        <p>Snapshots are sometimes referred as "volume backups" since they can also be used to recover the volume in case the database is lost or corrupted. This includes the volume configuration and the file metadata, but it does <b>not</b> include copies of the data.
+</p>
+        <p>
+It’s important to note that snapshots drive higher space consumption in the object storage, so we need to account for this in design phase.  See the “Storage efficiency considerations” chapter of this document. 
+</p>
+    </body>
+</html>
